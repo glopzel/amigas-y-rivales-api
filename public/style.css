@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background: black;
+    background: url('jr-korpa-neon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1, p {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.neon {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    margin: 50px;
+    padding: 50px 20px;
+    margin: auto;
+    color: #ffffff;
+    border-radius: 5px;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px 0 #fff,
+                0 0 20px 0 #f0f,
+                0 0 30px 0 #0ff;
+}
