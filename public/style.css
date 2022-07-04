@@ -13,24 +13,30 @@ main {
     background-position: center;
 }
 
-h1, p {
+h1, h2, p {
     font-family: 'DM Sans', sans-serif;
 }
 
-h1 {
-    text-align: center;
+h1 {  
     font-weight: 700;
     font-size: 2rem;
     margin-top: 0;
 }
 
+h1, h2, p {
+    text-align: center;
+}
+
 p {
-    text-align: justify;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
 .neon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80vw;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     margin: 50px;
