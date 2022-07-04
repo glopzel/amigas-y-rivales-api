@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const dotenv = require('dotenv');
 const PORT = 8000;
@@ -9,7 +10,7 @@ dotenv.config();
 let connectionStr = process.env.DB_STRING;
 let db, infoCollection, dbName = 'amigas-y-rivales';
 
-// app.use(cors())
+app.use(cors())
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(express.static(__dirname +'/public'))
@@ -48,6 +49,6 @@ app.get('/api/frases/:id', (request, response) => {
     .catch(error => console.error(error))
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`running on port ${PORT} go get it`)
 })
