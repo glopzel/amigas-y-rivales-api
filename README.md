@@ -12,7 +12,7 @@ Link para sacar frases:
 
 
     https://fausto-frases-api.herokuapp.com/api/frases/{x}
-x: número del 1 - 66
+x: número del 1 - 64
 
 Link para sacar frase por persona:  
 
