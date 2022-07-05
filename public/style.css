@@ -13,7 +13,7 @@ main {
     background-position: center;
 }
 
-h1, h2, p {
+h1, h2, p, a {
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -48,4 +48,17 @@ p {
     box-shadow: 0 0 10px 0 #fff,
                 0 0 20px 0 #f0f,
                 0 0 30px 0 #0ff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
