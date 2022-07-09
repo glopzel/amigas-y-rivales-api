@@ -25,6 +25,12 @@ MongoClient.connect(connectionStr, {useUnifiedTopology: true})
 
         db = client.db(dbName);
         infoCollection = db.collection('palabreos')
+
+        // infoCollection.updateMany({}, {$unset : {'num' : true}})
+        // deleted the key num
+
+        // infoCollection.find({}, {'name': true}).toArray()
+        //     gets all data from mongo, use then - catch
     })
 .catch(error => console.error(error));
 
@@ -42,9 +48,9 @@ app.get('/api/:name', (request, response) => {
 });
 
 app.get('/api/frases/:id', (request, response) => {
-    const identifier = request.params.id;
+    const identifier = Number(request.params.id);
 
-    infoCollection.find({"num": identifier}).toArray()
+    infoCollection.find({"_id": identifier}).toArray()
         .then(results => response.json(results))
     .catch(error => console.error(error))
 })
