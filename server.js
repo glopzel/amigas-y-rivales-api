@@ -25,12 +25,6 @@ MongoClient.connect(connectionStr, {useUnifiedTopology: true})
 
         db = client.db(dbName);
         infoCollection = db.collection('palabreos')
-
-        // infoCollection.updateMany({}, {$unset : {'num' : true}})
-        // deleted the key num
-
-        // infoCollection.find({}, {'name': true}).toArray()
-        //     gets all data from mongo, use then - catch
     })
 .catch(error => console.error(error));
 
