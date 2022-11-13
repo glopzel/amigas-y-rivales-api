@@ -6,18 +6,18 @@ Colección de palabreos que aparecen en Amigas y Rivales (versión Fausto).
 
 Link principal: 
 
-    https://fausto-frases-api.herokuapp.com/
+    https://amigas-y-rivales-api.cyclic.app/
 
 Link para sacar frases: 
 
 
-    https://fausto-frases-api.herokuapp.com/api/frases/{x}
+    https://amigas-y-rivales-api.cyclic.app/api/frases/{x}
 x: número del 1 - 64
 
 Link para sacar frase por persona:  
 
 
-    https://fausto-frases-api.herokuapp.com/api/{y}
+    https://amigas-y-rivales-api.cyclic.app/{y}
 y: nombre de la persona
 
 ## Process 
