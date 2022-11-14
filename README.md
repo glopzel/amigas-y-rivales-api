@@ -20,12 +20,11 @@ Link para sacar frase por persona:
     https://amigas-y-rivales-api.cyclic.app/{y}
 y: nombre de la persona
 
-## Process 
+## Tech used
 
-Usando la API de Twitter en Postman se hizo una extracción de datos de la cuenta [Frases de Fausto](https://twitter.com/frasesayrivales). De todos los tweets obtenidos se filtraron los mejores palabreos. La base de datos se armó en MongoDB, cada item con el texto, la persona/personaje que dirige el palabreo y el año en que ocurrió.  
-
-Tech used: Node, Express, MongoDB, Heroku. 
+- Twitter API (Postman) , tweets sacados de la cuenta [Frases de Fausto](https://twitter.com/frasesayrivales)
+- Node/Express, MongoDB
 
 ## Future plans
 
-Se va a agregar la opción de sacar la info por año
+- Se va a agregar la opción de sacar la info por año
